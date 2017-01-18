@@ -232,7 +232,14 @@ function longer (arr1, arr2){
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
-
+function both(arr1, arr2){
+var newArray = [];
+  for (var i = 0; i < arr1.length; i++){
+    if(arr2.indexOf(arr1[i]) !== -1){
+      newArray.push(arr1[i]);
+    }
+  } return newArray;
+}
 
 
 
